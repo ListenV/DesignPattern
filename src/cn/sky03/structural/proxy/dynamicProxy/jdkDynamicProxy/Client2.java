@@ -25,9 +25,11 @@ public class Client2 {
         @Override
         public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
             System.out.println("方法执行前。。。");
-            method.invoke(userService);
+            // returnVal是代理方法的返回值；有就有，没有就没有
+            // args是代理方法的参数；有就有，没有就没有
+            Object returnVal = method.invoke(userService, args);
             System.out.println("方法执行后。。。");
-            return null;
+            return returnVal;
         }
     }
 }
