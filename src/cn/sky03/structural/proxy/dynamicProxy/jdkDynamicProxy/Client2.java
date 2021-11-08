@@ -19,6 +19,11 @@ public class Client2 {
                 new UserServiceInvocationHandler(userService));
         // 由代理对象来执行方法
         service.add();
+        System.out.println("---------------");
+        // UserServiceImpl中的所有方法都被代理了
+        service.del();
+        System.out.println("---------------");
+        service.update();
     }
 
     private static class UserServiceInvocationHandler implements InvocationHandler{
