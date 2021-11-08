@@ -4,9 +4,9 @@ import cn.sky03.structural.proxy.staticProxy.service.UserService;
 
 public class UserServiceProxy implements UserService {
 
-    private UserService userService;
+    private final UserService userService;
 
-    public void setUserService(UserService userService) {
+    public UserServiceProxy(UserService userService) {
         this.userService = userService;
     }
 
