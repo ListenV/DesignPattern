@@ -1,4 +1,4 @@
-package cn.sky03.structural.proxy.staticProxy.service;
+package cn.sky03.structural.proxy.targetObj;
 
 public interface UserService {
     void add();

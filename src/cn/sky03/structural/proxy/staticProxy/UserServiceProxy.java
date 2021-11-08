@@ -1,6 +1,6 @@
 package cn.sky03.structural.proxy.staticProxy;
 
-import cn.sky03.structural.proxy.staticProxy.service.UserService;
+import cn.sky03.structural.proxy.targetObj.UserService;
 
 public class UserServiceProxy implements UserService {
 

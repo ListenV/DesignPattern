@@ -1,4 +1,4 @@
-package cn.sky03.structural.proxy.dynamicProxy.jdkDynamicProxy.service;
+package cn.sky03.structural.proxy.targetObj;
 
 public class UserServiceImpl implements UserService {
     public void add() {
