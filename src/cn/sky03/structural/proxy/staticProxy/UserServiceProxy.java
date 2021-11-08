@@ -1,6 +1,6 @@
 package cn.sky03.structural.proxy.staticProxy;
 
-import java.security.PrivateKey;
+import cn.sky03.structural.proxy.staticProxy.service.UserService;
 
 public class UserServiceProxy implements UserService {
 

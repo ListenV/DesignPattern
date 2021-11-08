@@ -1,4 +1,4 @@
-package cn.sky03.structural.proxy.staticProxy;
+package cn.sky03.structural.proxy.staticProxy.service;
 
 public class UserServiceImpl implements UserService {
     public void add() {

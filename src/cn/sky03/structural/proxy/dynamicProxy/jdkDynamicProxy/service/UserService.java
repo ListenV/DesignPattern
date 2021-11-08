@@ -1,4 +1,4 @@
-package cn.sky03.structural.proxy.dynamicProxy.jdkDynamicProxy;
+package cn.sky03.structural.proxy.dynamicProxy.jdkDynamicProxy.service;
 
 public interface UserService {
     void add();

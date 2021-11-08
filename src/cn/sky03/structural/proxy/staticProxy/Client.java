@@ -1,5 +1,8 @@
 package cn.sky03.structural.proxy.staticProxy;
 
+import cn.sky03.structural.proxy.staticProxy.service.UserService;
+import cn.sky03.structural.proxy.staticProxy.service.UserServiceImpl;
+
 public class Client {
 
     public static void main(String[] args) {
