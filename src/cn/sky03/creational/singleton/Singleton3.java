@@ -13,3 +13,8 @@ public class Singleton3 {
         return instance;
     }
 }
+
+/*
+ - 懒加载，不会浪费内存
+ - 线程不安全
+ */
