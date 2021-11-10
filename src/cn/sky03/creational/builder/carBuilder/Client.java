@@ -1,12 +1,12 @@
-package cn.sky03.creational.builder;
+package cn.sky03.creational.builder.carBuilder;
 
-import cn.sky03.creational.builder.builders.CarBuilder;
-import cn.sky03.creational.builder.builders.CarManualBuilder;
-import cn.sky03.creational.builder.car.Car;
-import cn.sky03.creational.builder.car.Manual;
-import cn.sky03.creational.builder.director.Director;
+import cn.sky03.creational.builder.carBuilder.builders.CarBuilder;
+import cn.sky03.creational.builder.carBuilder.builders.CarManualBuilder;
+import cn.sky03.creational.builder.carBuilder.car.Car;
+import cn.sky03.creational.builder.carBuilder.car.Manual;
+import cn.sky03.creational.builder.carBuilder.director.Director;
 
-public class Demo {
+public class Client {
     public static void main(String[] args) {
         Director director = new Director();
 
@@ -14,7 +14,7 @@ public class Demo {
         // (application code). That's because application knows better which
         // builder to use to get a specific product.
         CarBuilder builder = new CarBuilder();
-        director.constructSportsCar(builder);
+        director.constructTeslaCar(builder);
 
         // The final product is often retrieved from a builder object, since
         // Director is not aware and not dependent on concrete builders and
@@ -26,7 +26,7 @@ public class Demo {
         CarManualBuilder manualBuilder = new CarManualBuilder();
 
         // Director may know several building recipes.
-        director.constructSportsCar(manualBuilder);
+        director.constructTeslaCar(manualBuilder);
         Manual carManual = manualBuilder.getResult();
         System.out.println("\nCar manual built:\n" + carManual.print());
     }

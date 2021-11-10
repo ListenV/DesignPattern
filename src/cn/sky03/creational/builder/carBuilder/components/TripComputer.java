@@ -1,6 +1,6 @@
-package cn.sky03.creational.builder.components;
+package cn.sky03.creational.builder.carBuilder.components;
 
-import cn.sky03.creational.builder.car.Car;
+import cn.sky03.creational.builder.carBuilder.car.Car;
 
 public class TripComputer {
     private Car car;

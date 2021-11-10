@@ -1,10 +1,12 @@
-package cn.sky03.creational.builder.car;
+package cn.sky03.creational.builder.carBuilder.car;
 
-import cn.sky03.creational.builder.components.Engine;
-import cn.sky03.creational.builder.components.GPSNavigator;
-import cn.sky03.creational.builder.components.Transmission;
-import cn.sky03.creational.builder.components.TripComputer;
+import cn.sky03.creational.builder.carBuilder.components.Engine;
+import cn.sky03.creational.builder.carBuilder.components.GPSNavigator;
+import cn.sky03.creational.builder.carBuilder.components.Transmission;
+import cn.sky03.creational.builder.carBuilder.components.TripComputer;
 
+// 一辆汽车可能配备有 GPS 设备、行车电脑和几个座位。不同型号的汽车（
+// 运动型轿车、SUV 和敞篷车）可能会安装或启用不同的功能。
 public class Car {
     private final CarType carType;              //车子类型
     private final int seats;                    //座位数量

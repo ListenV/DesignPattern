@@ -1,5 +1,6 @@
-package cn.sky03.creational.builder.components;
+package cn.sky03.creational.builder.carBuilder.components;
 
+// GPS定位系统
 public class GPSNavigator {
     private String route;
 
