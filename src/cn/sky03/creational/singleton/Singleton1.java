@@ -1,34 +1,20 @@
 package cn.sky03.creational.singleton;
 
-/*
- * 饿汉式（静态变量）
- */
-
-public class SingletonDemo1 {
-    public static void main(String[] args) {
-        Singleton instance = Singleton.getInstance();
-        Singleton instance2 = Singleton.getInstance();
-        System.out.println(instance == instance2); //true
-
-        System.out.println("instance.hashCode=" + instance.hashCode());
-        System.out.println("instance2.hashCode=" + instance2.hashCode());
-    }
-}
-
-class Singleton{
+// 饿汉式（静态变量）
+public class Singleton1 {
     //私有构造方法，外部不能new
-    private Singleton(){}
+    private Singleton1(){}
 
     //内部调用构造方法，创建对象实例
-    private final static Singleton instance = new Singleton();
+    private final static Singleton1 instance = new Singleton1();
 
     //提供公有静态方法，返回实例
-    public static Singleton getInstance(){
+    public static Singleton1 getInstance(){
         return instance;
     }
 }
 
-/**
+/*
  优点：这种写法比较简单，就是在类装载的时候就完成实例化。避免了线程同步问题。
  缺点：在类装载的时候就完成实例化，没有达到Lazy Loading的效果。如果从始至终从未使用过这个实例，就会造成内存的浪费
 
