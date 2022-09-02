@@ -1,6 +1,5 @@
-# DesignPattern
-DesignPattern Learn
+## 简介
 
-test
+这是一个设计模式学习项目
 
-test2
+有哪里不对的地方欢迎指出
